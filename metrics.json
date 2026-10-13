@@ -1,0 +1,726 @@
+{
+  "project": "SuchnaSaar",
+  "task": "Sentence-level triage of Indian government notices",
+  "classes": [
+    "reference",
+    "action_required",
+    "deadline"
+  ],
+  "corpus": {
+    "total": 207,
+    "per_class": {
+      "reference": 73,
+      "action_required": 70,
+      "deadline": 64
+    },
+    "probe_size": 42,
+    "hard_probe_size": 25,
+    "note": "Sentences were written for this project in the register of Indian official drafting. They imitate the style; they are not quoted from any gazette."
+  },
+  "models": {
+    "baseline": "TF-IDF(word 1-2 + char_wb 3-5) + LogisticRegression",
+    "hybrid": "TF-IDF + engineered notice signals + LogisticRegression",
+    "latent": "TF-IDF(char_wb 3-5) + TruncatedSVD(120) + LogisticRegression",
+    "ensemble": "0.6 x hybrid + 0.4 x latent"
+  },
+  "chosen_model": "latent",
+  "chosen_because": "highest macro-F1 on the hard out-of-sample probe",
+  "cross_validation": {
+    "folds": 5,
+    "results": {
+      "baseline": {
+        "accuracy": 0.9179,
+        "macro_precision": 0.9179,
+        "macro_recall": 0.9191,
+        "macro_f1": 0.9184,
+        "weighted_f1": 0.9178,
+        "confusion": {
+          "reference": {
+            "reference": 66,
+            "action_required": 5,
+            "deadline": 2
+          },
+          "action_required": {
+            "reference": 4,
+            "action_required": 63,
+            "deadline": 3
+          },
+          "deadline": {
+            "reference": 1,
+            "action_required": 2,
+            "deadline": 61
+          }
+        },
+        "seconds": 1.6
+      },
+      "hybrid": {
+        "accuracy": 0.942,
+        "macro_precision": 0.9462,
+        "macro_recall": 0.9414,
+        "macro_f1": 0.9429,
+        "weighted_f1": 0.9425,
+        "confusion": {
+          "reference": {
+            "reference": 69,
+            "action_required": 4,
+            "deadline": 0
+          },
+          "action_required": {
+            "reference": 3,
+            "action_required": 67,
+            "deadline": 0
+          },
+          "deadline": {
+            "reference": 1,
+            "action_required": 4,
+            "deadline": 59
+          }
+        },
+        "seconds": 2.7
+      },
+      "latent": {
+        "accuracy": 0.8599,
+        "macro_precision": 0.8621,
+        "macro_recall": 0.8603,
+        "macro_f1": 0.861,
+        "weighted_f1": 0.8603,
+        "confusion": {
+          "reference": {
+            "reference": 63,
+            "action_required": 8,
+            "deadline": 2
+          },
+          "action_required": {
+            "reference": 7,
+            "action_required": 59,
+            "deadline": 4
+          },
+          "deadline": {
+            "reference": 2,
+            "action_required": 6,
+            "deadline": 56
+          }
+        },
+        "seconds": 1.9
+      },
+      "ensemble": {
+        "accuracy": 0.9565,
+        "macro_precision": 0.9588,
+        "macro_recall": 0.9564,
+        "macro_f1": 0.9573,
+        "weighted_f1": 0.9567,
+        "confusion": {
+          "reference": {
+            "reference": 70,
+            "action_required": 3,
+            "deadline": 0
+          },
+          "action_required": {
+            "reference": 3,
+            "action_required": 67,
+            "deadline": 0
+          },
+          "deadline": {
+            "reference": 1,
+            "action_required": 2,
+            "deadline": 61
+          }
+        },
+        "seconds": 4.3
+      }
+    }
+  },
+  "corpus_probe": {
+    "n": 42,
+    "results": {
+      "baseline": {
+        "accuracy": 0.881,
+        "macro_precision": 0.8814,
+        "macro_recall": 0.8807,
+        "macro_f1": 0.8804,
+        "weighted_f1": 0.8799,
+        "confusion": {
+          "reference": {
+            "reference": 14,
+            "action_required": 1,
+            "deadline": 0
+          },
+          "action_required": {
+            "reference": 2,
+            "action_required": 11,
+            "deadline": 1
+          },
+          "deadline": {
+            "reference": 0,
+            "action_required": 1,
+            "deadline": 12
+          }
+        }
+      },
+      "hybrid": {
+        "accuracy": 0.9762,
+        "macro_precision": 0.9792,
+        "macro_recall": 0.9762,
+        "macro_f1": 0.9769,
+        "weighted_f1": 0.9761,
+        "confusion": {
+          "reference": {
+            "reference": 15,
+            "action_required": 0,
+            "deadline": 0
+          },
+          "action_required": {
+            "reference": 1,
+            "action_required": 13,
+            "deadline": 0
+          },
+          "deadline": {
+            "reference": 0,
+            "action_required": 0,
+            "deadline": 13
+          }
+        }
+      },
+      "latent": {
+        "accuracy": 0.8571,
+        "macro_precision": 0.8621,
+        "macro_recall": 0.8551,
+        "macro_f1": 0.8566,
+        "weighted_f1": 0.8565,
+        "confusion": {
+          "reference": {
+            "reference": 14,
+            "action_required": 1,
+            "deadline": 0
+          },
+          "action_required": {
+            "reference": 2,
+            "action_required": 11,
+            "deadline": 1
+          },
+          "deadline": {
+            "reference": 1,
+            "action_required": 1,
+            "deadline": 11
+          }
+        }
+      },
+      "ensemble": {
+        "accuracy": 0.9762,
+        "macro_precision": 0.9792,
+        "macro_recall": 0.9762,
+        "macro_f1": 0.9769,
+        "weighted_f1": 0.9761,
+        "confusion": {
+          "reference": {
+            "reference": 15,
+            "action_required": 0,
+            "deadline": 0
+          },
+          "action_required": {
+            "reference": 1,
+            "action_required": 13,
+            "deadline": 0
+          },
+          "deadline": {
+            "reference": 0,
+            "action_required": 0,
+            "deadline": 13
+          }
+        }
+      }
+    }
+  },
+  "hard_probe": {
+    "n": 25,
+    "results": {
+      "baseline": {
+        "accuracy": 0.88,
+        "macro_precision": 0.875,
+        "macro_recall": 0.8918,
+        "macro_f1": 0.8778,
+        "weighted_f1": 0.8813,
+        "confusion": {
+          "reference": {
+            "reference": 9,
+            "action_required": 0,
+            "deadline": 2
+          },
+          "action_required": {
+            "reference": 0,
+            "action_required": 7,
+            "deadline": 0
+          },
+          "deadline": {
+            "reference": 0,
+            "action_required": 1,
+            "deadline": 6
+          }
+        }
+      },
+      "hybrid": {
+        "accuracy": 0.8,
+        "macro_precision": 0.8958,
+        "macro_recall": 0.7619,
+        "macro_f1": 0.7918,
+        "weighted_f1": 0.7955,
+        "confusion": {
+          "reference": {
+            "reference": 11,
+            "action_required": 0,
+            "deadline": 0
+          },
+          "action_required": {
+            "reference": 3,
+            "action_required": 4,
+            "deadline": 0
+          },
+          "deadline": {
+            "reference": 2,
+            "action_required": 0,
+            "deadline": 5
+          }
+        }
+      },
+      "latent": {
+        "accuracy": 0.88,
+        "macro_precision": 0.8843,
+        "macro_recall": 0.9091,
+        "macro_f1": 0.8835,
+        "weighted_f1": 0.8769,
+        "confusion": {
+          "reference": {
+            "reference": 8,
+            "action_required": 1,
+            "deadline": 2
+          },
+          "action_required": {
+            "reference": 0,
+            "action_required": 7,
+            "deadline": 0
+          },
+          "deadline": {
+            "reference": 0,
+            "action_required": 0,
+            "deadline": 7
+          }
+        }
+      },
+      "ensemble": {
+        "accuracy": 0.88,
+        "macro_precision": 0.9286,
+        "macro_recall": 0.8571,
+        "macro_f1": 0.8788,
+        "weighted_f1": 0.879,
+        "confusion": {
+          "reference": {
+            "reference": 11,
+            "action_required": 0,
+            "deadline": 0
+          },
+          "action_required": {
+            "reference": 2,
+            "action_required": 5,
+            "deadline": 0
+          },
+          "deadline": {
+            "reference": 1,
+            "action_required": 0,
+            "deadline": 6
+          }
+        }
+      }
+    },
+    "report": "                 precision    recall  f1-score   support\n\n      reference       1.00      0.73      0.84        11\naction_required       0.88      1.00      0.93         7\n       deadline       0.78      1.00      0.88         7\n\n       accuracy                           0.88        25\n      macro avg       0.88      0.91      0.88        25\n   weighted avg       0.90      0.88      0.88        25\n"
+  },
+  "engineered_signals": {
+    "count": 41,
+    "names": [
+      "sig_imperative",
+      "sig_deadline",
+      "sig_obligation_negative",
+      "sig_negation_of_action",
+      "sig_document_req",
+      "sig_application_action",
+      "sig_update_action",
+      "sig_payment",
+      "sig_penalty",
+      "sig_certificate_action",
+      "sig_eligibility",
+      "sig_objection",
+      "sig_inspection",
+      "sig_portal_link",
+      "sig_helpline",
+      "sig_legal_boilerplate",
+      "sig_preamble",
+      "sig_effective_date",
+      "sig_scope_objective",
+      "sig_historical",
+      "sig_authority",
+      "sig_procedural",
+      "sig_extension",
+      "sig_correction",
+      "sig_exemption",
+      "sig_benefit_amount",
+      "sig_public_notice",
+      "sig_form_reference",
+      "sig_section_ref",
+      "sig_percentage",
+      "n_urls",
+      "has_gov_domain",
+      "n_dates",
+      "has_currency",
+      "digit_ratio",
+      "upper_ratio",
+      "char_len_log",
+      "word_count_log",
+      "is_heading_like",
+      "has_all_caps_word",
+      "starts_with_number"
+    ],
+    "importance": [
+      {
+        "signal": "digit_ratio",
+        "description": "Proportion of characters that are digits",
+        "action_weight": -1.433,
+        "deadline_weight": 3.007,
+        "max_abs_weight": 3.007
+      },
+      {
+        "signal": "n_dates",
+        "description": "Number of date-like or duration expressions",
+        "action_weight": -1.038,
+        "deadline_weight": 2.319,
+        "max_abs_weight": 2.319
+      },
+      {
+        "signal": "sig_deadline",
+        "description": "Sets a deadline or cut-off date",
+        "action_weight": -1.094,
+        "deadline_weight": 2.265,
+        "max_abs_weight": 2.265
+      },
+      {
+        "signal": "sig_imperative",
+        "description": "Uses directive language (shall / must / is required to / are directed to)",
+        "action_weight": 2.235,
+        "deadline_weight": -0.171,
+        "max_abs_weight": 2.235
+      },
+      {
+        "signal": "sig_document_req",
+        "description": "Requires documents to be produced, uploaded or enclosed",
+        "action_weight": 1.621,
+        "deadline_weight": -0.479,
+        "max_abs_weight": 1.621
+      },
+      {
+        "signal": "upper_ratio",
+        "description": "Proportion of characters that are uppercase",
+        "action_weight": -0.77,
+        "deadline_weight": 0.472,
+        "max_abs_weight": 0.77
+      },
+      {
+        "signal": "sig_certificate_action",
+        "description": "Requires a certificate, licence, permit or approval",
+        "action_weight": 0.739,
+        "deadline_weight": 0.129,
+        "max_abs_weight": 0.739
+      },
+      {
+        "signal": "sig_update_action",
+        "description": "Asks the reader to update, link, correct or verify a record",
+        "action_weight": 0.726,
+        "deadline_weight": 0.225,
+        "max_abs_weight": 0.726
+      },
+      {
+        "signal": "sig_authority",
+        "description": "Names a government authority as the issuing body",
+        "action_weight": 0.272,
+        "deadline_weight": -0.723,
+        "max_abs_weight": 0.723
+      },
+      {
+        "signal": "sig_negation_of_action",
+        "description": "Explicitly tells the reader that no action is needed",
+        "action_weight": -0.63,
+        "deadline_weight": -0.256,
+        "max_abs_weight": 0.63
+      },
+      {
+        "signal": "sig_objection",
+        "description": "Invites objections, claims, representations or appeals",
+        "action_weight": -0.387,
+        "deadline_weight": 0.588,
+        "max_abs_weight": 0.588
+      },
+      {
+        "signal": "sig_exemption",
+        "description": "Deals with an exemption, waiver or relaxation",
+        "action_weight": -0.584,
+        "deadline_weight": -0.151,
+        "max_abs_weight": 0.584
+      },
+      {
+        "signal": "sig_procedural",
+        "description": "Describes internal procedure (meetings, quorum, records)",
+        "action_weight": -0.534,
+        "deadline_weight": -0.246,
+        "max_abs_weight": 0.534
+      },
+      {
+        "signal": "sig_eligibility",
+        "description": "States who is eligible or entitled to a benefit",
+        "action_weight": 0.352,
+        "deadline_weight": -0.525,
+        "max_abs_weight": 0.525
+      },
+      {
+        "signal": "sig_legal_boilerplate",
+        "description": "Legal drafting boilerplate rather than an instruction",
+        "action_weight": -0.511,
+        "deadline_weight": -0.241,
+        "max_abs_weight": 0.511
+      },
+      {
+        "signal": "sig_extension",
+        "description": "Announces an extension of time",
+        "action_weight": -0.203,
+        "deadline_weight": 0.501,
+        "max_abs_weight": 0.501
+      },
+      {
+        "signal": "char_len_log",
+        "description": "Sentence length (log characters)",
+        "action_weight": 0.123,
+        "deadline_weight": -0.467,
+        "max_abs_weight": 0.467
+      },
+      {
+        "signal": "sig_form_reference",
+        "description": "Refers to a numbered form, annexure or schedule",
+        "action_weight": 0.271,
+        "deadline_weight": -0.43,
+        "max_abs_weight": 0.43
+      },
+      {
+        "signal": "sig_portal_link",
+        "description": "Points to a website or online portal",
+        "action_weight": 0.194,
+        "deadline_weight": -0.38,
+        "max_abs_weight": 0.38
+      },
+      {
+        "signal": "sig_inspection",
+        "description": "Provides for inspection, audit or physical verification",
+        "action_weight": 0.35,
+        "deadline_weight": -0.038,
+        "max_abs_weight": 0.35
+      },
+      {
+        "signal": "sig_effective_date",
+        "description": "States when a rule takes effect",
+        "action_weight": -0.326,
+        "deadline_weight": -0.142,
+        "max_abs_weight": 0.326
+      },
+      {
+        "signal": "sig_payment",
+        "description": "Involves a fee, payment, deposit or challan",
+        "action_weight": 0.323,
+        "deadline_weight": 0.215,
+        "max_abs_weight": 0.323
+      },
+      {
+        "signal": "sig_historical",
+        "description": "Reports something that already happened, rather than instructing",
+        "action_weight": -0.16,
+        "deadline_weight": -0.319,
+        "max_abs_weight": 0.319
+      },
+      {
+        "signal": "sig_public_notice",
+        "description": "Addresses the general public as an audience",
+        "action_weight": 0.24,
+        "deadline_weight": -0.319,
+        "max_abs_weight": 0.319
+      },
+      {
+        "signal": "word_count_log",
+        "description": "Sentence length (log words)",
+        "action_weight": -0.105,
+        "deadline_weight": -0.277,
+        "max_abs_weight": 0.277
+      },
+      {
+        "signal": "sig_correction",
+        "description": "Is a corrigendum, amendment or errata",
+        "action_weight": -0.261,
+        "deadline_weight": -0.246,
+        "max_abs_weight": 0.261
+      },
+      {
+        "signal": "sig_application_action",
+        "description": "Asks the reader to apply, register, enrol or renew",
+        "action_weight": 0.209,
+        "deadline_weight": 0.182,
+        "max_abs_weight": 0.209
+      },
+      {
+        "signal": "sig_scope_objective",
+        "description": "States the objective or background of a scheme",
+        "action_weight": -0.087,
+        "deadline_weight": -0.201,
+        "max_abs_weight": 0.201
+      },
+      {
+        "signal": "sig_section_ref",
+        "description": "Cites a section, rule or clause number",
+        "action_weight": -0.055,
+        "deadline_weight": -0.143,
+        "max_abs_weight": 0.143
+      },
+      {
+        "signal": "sig_preamble",
+        "description": "Announces the document rather than instructing anyone",
+        "action_weight": -0.054,
+        "deadline_weight": -0.083,
+        "max_abs_weight": 0.083
+      }
+    ]
+  },
+  "top_text_features": {
+    "action_required": [
+      {
+        "term": "are",
+        "weight": 0.407
+      },
+      {
+        "term": "applicants",
+        "weight": 0.385
+      },
+      {
+        "term": "must",
+        "weight": 0.337
+      },
+      {
+        "term": "ensure",
+        "weight": 0.322
+      },
+      {
+        "term": "ensure that",
+        "weight": 0.322
+      },
+      {
+        "term": "register",
+        "weight": 0.29
+      },
+      {
+        "term": "that",
+        "weight": 0.284
+      },
+      {
+        "term": "with",
+        "weight": 0.283
+      },
+      {
+        "term": "documents are",
+        "weight": 0.283
+      },
+      {
+        "term": "applicants should",
+        "weight": 0.283
+      }
+    ],
+    "deadline": [
+      {
+        "term": "31",
+        "weight": 0.482
+      },
+      {
+        "term": "up",
+        "weight": 0.461
+      },
+      {
+        "term": "up to",
+        "weight": 0.461
+      },
+      {
+        "term": "date",
+        "weight": 0.458
+      },
+      {
+        "term": "be",
+        "weight": 0.424
+      },
+      {
+        "term": "working days",
+        "weight": 0.383
+      },
+      {
+        "term": "working",
+        "weight": 0.383
+      },
+      {
+        "term": "within working",
+        "weight": 0.383
+      },
+      {
+        "term": "days",
+        "weight": 0.372
+      },
+      {
+        "term": "within",
+        "weight": 0.354
+      }
+    ],
+    "reference": [
+      {
+        "term": "scheme",
+        "weight": 0.458
+      },
+      {
+        "term": "shall be",
+        "weight": 0.441
+      },
+      {
+        "term": "and",
+        "weight": 0.437
+      },
+      {
+        "term": "be",
+        "weight": 0.434
+      },
+      {
+        "term": "members",
+        "weight": 0.374
+      },
+      {
+        "term": "the scheme",
+        "weight": 0.37
+      },
+      {
+        "term": "scheme shall",
+        "weight": 0.348
+      },
+      {
+        "term": "apply to",
+        "weight": 0.333
+      },
+      {
+        "term": "to be",
+        "weight": 0.29
+      },
+      {
+        "term": "apply",
+        "weight": 0.273
+      }
+    ]
+  },
+  "environment": {
+    "note": "All dependencies are free and open source; no GPU and no paid API is used.",
+    "generated_utc": "2026-10-12T08:31:32Z"
+  }
+}

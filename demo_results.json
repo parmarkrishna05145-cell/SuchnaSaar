@@ -1,0 +1,2087 @@
+{
+  "N1": {
+    "title": "Public Notice: Updation of Aadhaar-linked bank details for benefit transfer",
+    "issuer": "Department of Agriculture and Farmers' Welfare",
+    "verdict": "This notice asks you to do 4 things and sets 3 deadlines.",
+    "role_counts": {
+      "reference": 6,
+      "uncertain": 1,
+      "action_required": 4,
+      "deadline": 3
+    },
+    "sentence_count": 14,
+    "actions": [
+      {
+        "n": 1,
+        "sentence": "Beneficiaries are directed to link their bank account with the Aadhaar number.",
+        "confidence": 0.786
+      },
+      {
+        "n": 2,
+        "sentence": "The applicant is required to complete the e-KYC process before the benefit can be released.",
+        "confidence": 0.624
+      },
+      {
+        "n": 3,
+        "sentence": "Applicants are required to submit a self-attested copy of the Aadhaar card along with the application.",
+        "confidence": 0.869
+      },
+      {
+        "n": 4,
+        "sentence": "The last date for the linking of the Aadhaar number with the bank account is 30 April.",
+        "confidence": 0.659
+      },
+      {
+        "n": 5,
+        "sentence": "The application must be submitted within 30 days from the date of publication of this notice.",
+        "confidence": 0.926
+      },
+      {
+        "n": 6,
+        "sentence": "The documents shall be verified within 3 working days of receipt.",
+        "confidence": 0.795
+      },
+      {
+        "n": 7,
+        "sentence": "The beneficiary must upload a copy of the land record on the portal.",
+        "confidence": 0.756
+      }
+    ],
+    "deadlines": [
+      {
+        "phrase": "30 April."
+      },
+      {
+        "phrase": "within 30 days"
+      },
+      {
+        "phrase": "30 days from the date of"
+      },
+      {
+        "phrase": "within 3 working days"
+      }
+    ],
+    "scheme": "PM-KISAN Samman Nidhi",
+    "routes": [
+      {
+        "name": "UIDAI / My Aadhaar",
+        "url": "https://uidai.gov.in/",
+        "why": "matches the subject of this notice"
+      },
+      {
+        "name": "PM-KISAN",
+        "url": "https://pmkisan.gov.in/",
+        "why": "matches the subject of this notice"
+      }
+    ],
+    "safety": {
+      "level": "consistent",
+      "headline": "This notice shows the cues of a genuine official document. That is not a guarantee.",
+      "genuine_cues": [
+        "Names a government ministry or department",
+        "Points to an official website"
+      ],
+      "caution_cues": [],
+      "advice": "A notice that asks for money, an OTP, a UPI transfer, or an app install is not a normal government notice. Verify the file number and the issuer on the department's official website, or on the eGazette, before you respond."
+    },
+    "sentences": [
+      {
+        "sentence": "The Scheme was launched to provide income support to landholding farmer families.",
+        "role": "reference",
+        "confidence": 0.713,
+        "probabilities": {
+          "reference": 0.713,
+          "action_required": 0.196,
+          "deadline": 0.09
+        },
+        "signals": [
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_benefit_amount",
+            "description": "States an amount of money a citizen receives or pays",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4067
+          }
+        ]
+      },
+      {
+        "sentence": "The Department has already released several instalments through direct benefit transfer.",
+        "role": "reference",
+        "confidence": 0.609,
+        "probabilities": {
+          "reference": 0.609,
+          "action_required": 0.318,
+          "deadline": 0.073
+        },
+        "signals": [
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4886
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.4849
+          }
+        ]
+      },
+      {
+        "sentence": "The Ministry of Finance has approved the revised guidelines of the Scheme.",
+        "role": "reference",
+        "confidence": 0.792,
+        "probabilities": {
+          "reference": 0.792,
+          "action_required": 0.098,
+          "deadline": 0.11
+        },
+        "signals": [
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_authority",
+            "description": "Names a government authority as the issuing body",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.3175
+          }
+        ]
+      },
+      {
+        "sentence": "It has been observed that in a number of cases the benefit could not be credited because the bank account is not linked with the Aadhaar number.",
+        "role": "uncertain",
+        "confidence": 0.502,
+        "probabilities": {
+          "reference": 0.258,
+          "action_required": 0.502,
+          "deadline": 0.24
+        },
+        "signals": [
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.9767
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 3.3322
+          }
+        ]
+      },
+      {
+        "sentence": "Beneficiaries are directed to link their bank account with the Aadhaar number.",
+        "role": "action_required",
+        "confidence": 0.786,
+        "probabilities": {
+          "reference": 0.112,
+          "action_required": 0.786,
+          "deadline": 0.102
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_update_action",
+            "description": "Asks the reader to update, link, correct or verify a record",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_eligibility",
+            "description": "States who is eligible or entitled to a benefit",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The applicant is required to complete the e-KYC process before the benefit can be released.",
+        "role": "action_required",
+        "confidence": 0.624,
+        "probabilities": {
+          "reference": 0.179,
+          "action_required": 0.624,
+          "deadline": 0.197
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_update_action",
+            "description": "Asks the reader to update, link, correct or verify a record",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5218
+          }
+        ]
+      },
+      {
+        "sentence": "Applicants are required to submit a self-attested copy of the Aadhaar card along with the application.",
+        "role": "action_required",
+        "confidence": 0.869,
+        "probabilities": {
+          "reference": 0.065,
+          "action_required": 0.869,
+          "deadline": 0.066
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_application_action",
+            "description": "Asks the reader to apply, register, enrol or renew",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The last date for the linking of the Aadhaar number with the bank account is 30 April.",
+        "role": "deadline",
+        "confidence": 0.659,
+        "probabilities": {
+          "reference": 0.098,
+          "action_required": 0.243,
+          "deadline": 0.659
+        },
+        "signals": [
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_update_action",
+            "description": "Asks the reader to update, link, correct or verify a record",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4659
+          }
+        ]
+      },
+      {
+        "sentence": "The application must be submitted within 30 days from the date of publication of this notice.",
+        "role": "deadline",
+        "confidence": 0.926,
+        "probabilities": {
+          "reference": 0.031,
+          "action_required": 0.043,
+          "deadline": 0.926
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_application_action",
+            "description": "Asks the reader to apply, register, enrol or renew",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The documents shall be verified within 3 working days of receipt.",
+        "role": "deadline",
+        "confidence": 0.795,
+        "probabilities": {
+          "reference": 0.075,
+          "action_required": 0.13,
+          "deadline": 0.795
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_update_action",
+            "description": "Asks the reader to update, link, correct or verify a record",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.1897
+          }
+        ]
+      },
+      {
+        "sentence": "The beneficiary must upload a copy of the land record on the portal.",
+        "role": "action_required",
+        "confidence": 0.756,
+        "probabilities": {
+          "reference": 0.182,
+          "action_required": 0.756,
+          "deadline": 0.062
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_eligibility",
+            "description": "States who is eligible or entitled to a benefit",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The details of the Scheme are available on the official website of the Department.",
+        "role": "reference",
+        "confidence": 0.814,
+        "probabilities": {
+          "reference": 0.814,
+          "action_required": 0.13,
+          "deadline": 0.056
+        },
+        "signals": [
+          {
+            "signal": "sig_portal_link",
+            "description": "Points to a website or online portal",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4188
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.7081
+          }
+        ]
+      },
+      {
+        "sentence": "The Scheme has been extended for a further period of five years with the same terms and conditions.",
+        "role": "reference",
+        "confidence": 0.763,
+        "probabilities": {
+          "reference": 0.763,
+          "action_required": 0.058,
+          "deadline": 0.179
+        },
+        "signals": [
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_extension",
+            "description": "Announces an extension of time",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.6052
+          }
+        ]
+      },
+      {
+        "sentence": "This is for information of all concerned.",
+        "role": "reference",
+        "confidence": 0.696,
+        "probabilities": {
+          "reference": 0.696,
+          "action_required": 0.119,
+          "deadline": 0.184
+        },
+        "signals": [
+          {
+            "signal": "sig_preamble",
+            "description": "Announces the document rather than instructing anyone",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_public_notice",
+            "description": "Addresses the general public as an audience",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 3.7377
+          }
+        ]
+      }
+    ]
+  },
+  "N2": {
+    "title": "Office Memorandum: Filing of annual return and payment of prescribed fee",
+    "issuer": "Regional Office, Employees' State Insurance Corporation",
+    "verdict": "This notice asks you to do 4 things and sets 5 deadlines.",
+    "role_counts": {
+      "reference": 3,
+      "action_required": 4,
+      "uncertain": 2,
+      "deadline": 5
+    },
+    "sentence_count": 14,
+    "actions": [
+      {
+        "n": 1,
+        "sentence": "The establishment must file a fresh registration application with the Department where the earlier registration has lapsed.",
+        "confidence": 0.648
+      },
+      {
+        "n": 2,
+        "sentence": "The contribution for the month shall be deposited within 15 days of the close of the month.",
+        "confidence": 0.814
+      },
+      {
+        "n": 3,
+        "sentence": "Entities are required to submit the annual return in the prescribed format.",
+        "confidence": 0.763
+      },
+      {
+        "n": 4,
+        "sentence": "The institution must submit a statement of accounts audited by a chartered accountant.",
+        "confidence": 0.755
+      },
+      {
+        "n": 5,
+        "sentence": "The compliance report is to be submitted within 30 days of the close of the financial year.",
+        "confidence": 0.813
+      },
+      {
+        "n": 6,
+        "sentence": "The last date for submission of the annual return is 31 December.",
+        "confidence": 0.807
+      },
+      {
+        "n": 7,
+        "sentence": "Applications received after the cut-off date will not be entertained.",
+        "confidence": 0.624
+      },
+      {
+        "n": 8,
+        "sentence": "The prescribed time limit for filing the appeal is 45 days.",
+        "confidence": 0.834
+      },
+      {
+        "n": 9,
+        "sentence": "The applicant is required to pay the prescribed fee through the online challan.",
+        "confidence": 0.769
+      }
+    ],
+    "deadlines": [
+      {
+        "phrase": "within 15 days"
+      },
+      {
+        "phrase": "within 30 days"
+      },
+      {
+        "phrase": "31 December."
+      }
+    ],
+    "scheme": null,
+    "routes": [
+      {
+        "name": "CPGRAMS (grievance portal)",
+        "url": "https://pgportal.gov.in/",
+        "why": "matches the subject of this notice"
+      }
+    ],
+    "safety": {
+      "level": "unclear",
+      "headline": "There are no strong cues either way. Check the notice against the official portal before acting.",
+      "genuine_cues": [],
+      "caution_cues": [],
+      "advice": "A notice that asks for money, an OTP, a UPI transfer, or an app install is not a normal government notice. Verify the file number and the issuer on the department's official website, or on the eGazette, before you respond."
+    },
+    "sentences": [
+      {
+        "sentence": "In exercise of the powers conferred by the provisions of the Act, the Regional Office hereby directs as follows.",
+        "role": "reference",
+        "confidence": 0.745,
+        "probabilities": {
+          "reference": 0.745,
+          "action_required": 0.145,
+          "deadline": 0.11
+        },
+        "signals": [
+          {
+            "signal": "sig_legal_boilerplate",
+            "description": "Legal drafting boilerplate rather than an instruction",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.7274
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.9957
+          }
+        ]
+      },
+      {
+        "sentence": "The establishment must file a fresh registration application with the Department where the earlier registration has lapsed.",
+        "role": "action_required",
+        "confidence": 0.648,
+        "probabilities": {
+          "reference": 0.215,
+          "action_required": 0.648,
+          "deadline": 0.137
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_application_action",
+            "description": "Asks the reader to apply, register, enrol or renew",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.8203
+          }
+        ]
+      },
+      {
+        "sentence": "The employer shall deposit the contribution with the fund within the prescribed period.",
+        "role": "uncertain",
+        "confidence": 0.536,
+        "probabilities": {
+          "reference": 0.114,
+          "action_required": 0.536,
+          "deadline": 0.35
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_payment",
+            "description": "Involves a fee, payment, deposit or challan",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4773
+          }
+        ]
+      },
+      {
+        "sentence": "The contribution for the month shall be deposited within 15 days of the close of the month.",
+        "role": "deadline",
+        "confidence": 0.814,
+        "probabilities": {
+          "reference": 0.076,
+          "action_required": 0.11,
+          "deadline": 0.814
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5218
+          }
+        ]
+      },
+      {
+        "sentence": "Entities are required to submit the annual return in the prescribed format.",
+        "role": "action_required",
+        "confidence": 0.763,
+        "probabilities": {
+          "reference": 0.146,
+          "action_required": 0.763,
+          "deadline": 0.091
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_form_reference",
+            "description": "Refers to a numbered form, annexure or schedule",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The establishment shall display the abstract of the Act at the main entrance.",
+        "role": "uncertain",
+        "confidence": 0.539,
+        "probabilities": {
+          "reference": 0.307,
+          "action_required": 0.539,
+          "deadline": 0.153
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.3567
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.6391
+          }
+        ]
+      },
+      {
+        "sentence": "The institution must submit a statement of accounts audited by a chartered accountant.",
+        "role": "action_required",
+        "confidence": 0.755,
+        "probabilities": {
+          "reference": 0.141,
+          "action_required": 0.755,
+          "deadline": 0.105
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_inspection",
+            "description": "Provides for inspection, audit or physical verification",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The compliance report is to be submitted within 30 days of the close of the financial year.",
+        "role": "deadline",
+        "confidence": 0.813,
+        "probabilities": {
+          "reference": 0.13,
+          "action_required": 0.056,
+          "deadline": 0.813
+        },
+        "signals": [
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5218
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.8904
+          }
+        ]
+      },
+      {
+        "sentence": "The last date for submission of the annual return is 31 December.",
+        "role": "deadline",
+        "confidence": 0.807,
+        "probabilities": {
+          "reference": 0.092,
+          "action_required": 0.101,
+          "deadline": 0.807
+        },
+        "signals": [
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.1897
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.5649
+          }
+        ]
+      },
+      {
+        "sentence": "Applications received after the cut-off date will not be entertained.",
+        "role": "deadline",
+        "confidence": 0.624,
+        "probabilities": {
+          "reference": 0.163,
+          "action_required": 0.213,
+          "deadline": 0.624
+        },
+        "signals": [
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.2485
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.3979
+          }
+        ]
+      },
+      {
+        "sentence": "The prescribed time limit for filing the appeal is 45 days.",
+        "role": "deadline",
+        "confidence": 0.834,
+        "probabilities": {
+          "reference": 0.059,
+          "action_required": 0.107,
+          "deadline": 0.834
+        },
+        "signals": [
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_objection",
+            "description": "Invites objections, claims, representations or appeals",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.0943
+          }
+        ]
+      },
+      {
+        "sentence": "The applicant is required to pay the prescribed fee through the online challan.",
+        "role": "action_required",
+        "confidence": 0.769,
+        "probabilities": {
+          "reference": 0.114,
+          "action_required": 0.769,
+          "deadline": 0.117
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_payment",
+            "description": "Involves a fee, payment, deposit or challan",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.382
+          }
+        ]
+      },
+      {
+        "sentence": "The provisions of the Act are in addition to, and not in derogation of, any other law in force.",
+        "role": "reference",
+        "confidence": 0.752,
+        "probabilities": {
+          "reference": 0.752,
+          "action_required": 0.145,
+          "deadline": 0.103
+        },
+        "signals": [
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5643
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.9957
+          },
+          {
+            "signal": "upper_ratio",
+            "description": "Proportion of characters that are uppercase",
+            "value": 0.0211
+          }
+        ]
+      },
+      {
+        "sentence": "No action is required on the part of the addressee in respect of the earlier communication.",
+        "role": "reference",
+        "confidence": 0.586,
+        "probabilities": {
+          "reference": 0.586,
+          "action_required": 0.276,
+          "deadline": 0.138
+        },
+        "signals": [
+          {
+            "signal": "sig_negation_of_action",
+            "description": "Explicitly tells the reader that no action is needed",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5218
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.8332
+          }
+        ]
+      }
+    ]
+  },
+  "N3": {
+    "title": "Public Notice: Invitation of objections to draft electoral roll revision",
+    "issuer": "Office of the Electoral Registration Officer, District Administration",
+    "verdict": "This notice asks you to do 2 things and sets 2 deadlines.",
+    "role_counts": {
+      "uncertain": 2,
+      "reference": 5,
+      "deadline": 2,
+      "action_required": 2
+    },
+    "sentence_count": 11,
+    "actions": [
+      {
+        "n": 1,
+        "sentence": "Objections, if any, may be filed within 15 days from the date of this notification.",
+        "confidence": 0.856
+      },
+      {
+        "n": 2,
+        "sentence": "The objections must be received within 14 days of the publication of this notice.",
+        "confidence": 0.853
+      },
+      {
+        "n": 3,
+        "sentence": "Applicants are required to submit the proof of residence such as a utility bill or rent agreement.",
+        "confidence": 0.838
+      },
+      {
+        "n": 4,
+        "sentence": "The applicant shall enclose a certificate from the competent authority where the address has changed.",
+        "confidence": 0.754
+      }
+    ],
+    "deadlines": [
+      {
+        "phrase": "within 15 days"
+      },
+      {
+        "phrase": "15 days from the date of"
+      },
+      {
+        "phrase": "within 14 days"
+      }
+    ],
+    "scheme": null,
+    "routes": [
+      {
+        "name": "Election Commission of India (voters' services)",
+        "url": "https://voters.eci.gov.in/",
+        "why": "matches the subject of this notice"
+      },
+      {
+        "name": "CPGRAMS (grievance portal)",
+        "url": "https://pgportal.gov.in/",
+        "why": "matches the subject of this notice"
+      }
+    ],
+    "safety": {
+      "level": "consistent",
+      "headline": "This notice shows the cues of a genuine official document. That is not a guarantee.",
+      "genuine_cues": [
+        "Uses standard official notification phrasing"
+      ],
+      "caution_cues": [],
+      "advice": "A notice that asks for money, an OTP, a UPI transfer, or an app install is not a normal government notice. Verify the file number and the issuer on the department's official website, or on the eGazette, before you respond."
+    },
+    "sentences": [
+      {
+        "sentence": "Notice is hereby given that the draft electoral roll has been published in accordance with the directions of the Commission.",
+        "role": "uncertain",
+        "confidence": 0.474,
+        "probabilities": {
+          "reference": 0.474,
+          "action_required": 0.228,
+          "deadline": 0.297
+        },
+        "signals": [
+          {
+            "signal": "sig_preamble",
+            "description": "Announces the document rather than instructing anyone",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_authority",
+            "description": "Names a government authority as the issuing body",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The draft roll has been prepared on the basis of the qualifying date.",
+        "role": "uncertain",
+        "confidence": 0.489,
+        "probabilities": {
+          "reference": 0.489,
+          "action_required": 0.194,
+          "deadline": 0.317
+        },
+        "signals": [
+          {
+            "signal": "sig_eligibility",
+            "description": "States who is eligible or entitled to a benefit",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.2485
+          }
+        ]
+      },
+      {
+        "sentence": "All stakeholders are requested to note the above for compliance.",
+        "role": "reference",
+        "confidence": 0.605,
+        "probabilities": {
+          "reference": 0.605,
+          "action_required": 0.282,
+          "deadline": 0.113
+        },
+        "signals": [
+          {
+            "signal": "sig_public_notice",
+            "description": "Addresses the general public as an audience",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.1744
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.3979
+          }
+        ]
+      },
+      {
+        "sentence": "Objections, if any, may be filed within 15 days from the date of this notification.",
+        "role": "deadline",
+        "confidence": 0.856,
+        "probabilities": {
+          "reference": 0.114,
+          "action_required": 0.03,
+          "deadline": 0.856
+        },
+        "signals": [
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_objection",
+            "description": "Invites objections, claims, representations or appeals",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4308
+          }
+        ]
+      },
+      {
+        "sentence": "The objections must be received within 14 days of the publication of this notice.",
+        "role": "deadline",
+        "confidence": 0.853,
+        "probabilities": {
+          "reference": 0.092,
+          "action_required": 0.054,
+          "deadline": 0.853
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_objection",
+            "description": "Invites objections, claims, representations or appeals",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "Applicants are required to submit the proof of residence such as a utility bill or rent agreement.",
+        "role": "action_required",
+        "confidence": 0.838,
+        "probabilities": {
+          "reference": 0.102,
+          "action_required": 0.838,
+          "deadline": 0.06
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5951
+          }
+        ]
+      },
+      {
+        "sentence": "The applicant shall enclose a certificate from the competent authority where the address has changed.",
+        "role": "action_required",
+        "confidence": 0.754,
+        "probabilities": {
+          "reference": 0.142,
+          "action_required": 0.754,
+          "deadline": 0.104
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_certificate_action",
+            "description": "Requires a certificate, licence, permit or approval",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "Forms are available free of cost at the office of the Electoral Registration Officer.",
+        "role": "reference",
+        "confidence": 0.588,
+        "probabilities": {
+          "reference": 0.588,
+          "action_required": 0.29,
+          "deadline": 0.122
+        },
+        "signals": [
+          {
+            "signal": "sig_application_action",
+            "description": "Asks the reader to apply, register, enrol or renew",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_form_reference",
+            "description": "Refers to a numbered form, annexure or schedule",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4543
+          }
+        ]
+      },
+      {
+        "sentence": "The records of the case are available for perusal in the office of the undersigned.",
+        "role": "reference",
+        "confidence": 0.743,
+        "probabilities": {
+          "reference": 0.743,
+          "action_required": 0.158,
+          "deadline": 0.098
+        },
+        "signals": [
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4308
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.7726
+          },
+          {
+            "signal": "upper_ratio",
+            "description": "Proportion of characters that are uppercase",
+            "value": 0.012
+          }
+        ]
+      },
+      {
+        "sentence": "The hearing in the matter has been concluded and the order is reserved.",
+        "role": "reference",
+        "confidence": 0.769,
+        "probabilities": {
+          "reference": 0.769,
+          "action_required": 0.116,
+          "deadline": 0.115
+        },
+        "signals": [
+          {
+            "signal": "sig_objection",
+            "description": "Invites objections, claims, representations or appeals",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.2767
+          }
+        ]
+      },
+      {
+        "sentence": "This is for information of all concerned.",
+        "role": "reference",
+        "confidence": 0.696,
+        "probabilities": {
+          "reference": 0.696,
+          "action_required": 0.119,
+          "deadline": 0.184
+        },
+        "signals": [
+          {
+            "signal": "sig_preamble",
+            "description": "Announces the document rather than instructing anyone",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_public_notice",
+            "description": "Addresses the general public as an audience",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 3.7377
+          }
+        ]
+      }
+    ]
+  },
+  "N4": {
+    "title": "Circular: Corrigendum to the grant utilisation guidelines",
+    "issuer": "Department of Rural Development",
+    "verdict": "This notice asks you to do 2 things and sets 3 deadlines.",
+    "role_counts": {
+      "reference": 4,
+      "uncertain": 3,
+      "action_required": 2,
+      "deadline": 3
+    },
+    "sentence_count": 12,
+    "actions": [
+      {
+        "n": 1,
+        "sentence": "The organisation shall submit a utilisation certificate for the grant received.",
+        "confidence": 0.579
+      },
+      {
+        "n": 2,
+        "sentence": "The contractor must furnish a performance guarantee in the prescribed form.",
+        "confidence": 0.681
+      },
+      {
+        "n": 3,
+        "sentence": "The utilisation certificate is to be submitted within 60 days of the close of the financial year.",
+        "confidence": 0.718
+      },
+      {
+        "n": 4,
+        "sentence": "The last date for the submission of the utilisation certificate is 30 June.",
+        "confidence": 0.66
+      },
+      {
+        "n": 5,
+        "sentence": "The extension of time is granted up to 30 September.",
+        "confidence": 0.737
+      }
+    ],
+    "deadlines": [
+      {
+        "phrase": "within 60 days"
+      },
+      {
+        "phrase": "30 June."
+      },
+      {
+        "phrase": "30 September."
+      }
+    ],
+    "scheme": null,
+    "routes": [],
+    "safety": {
+      "level": "unclear",
+      "headline": "There are no strong cues either way. Check the notice against the official portal before acting.",
+      "genuine_cues": [],
+      "caution_cues": [],
+      "advice": "A notice that asks for money, an OTP, a UPI transfer, or an app install is not a normal government notice. Verify the file number and the issuer on the department's official website, or on the eGazette, before you respond."
+    },
+    "sentences": [
+      {
+        "sentence": "This circular is issued in supersession of the circular issued earlier on the same subject.",
+        "role": "reference",
+        "confidence": 0.783,
+        "probabilities": {
+          "reference": 0.783,
+          "action_required": 0.093,
+          "deadline": 0.124
+        },
+        "signals": [
+          {
+            "signal": "sig_legal_boilerplate",
+            "description": "Legal drafting boilerplate rather than an instruction",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5218
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.7726
+          }
+        ]
+      },
+      {
+        "sentence": "The corrigendum is issued to correct a clerical error in the original notification.",
+        "role": "uncertain",
+        "confidence": 0.526,
+        "probabilities": {
+          "reference": 0.526,
+          "action_required": 0.317,
+          "deadline": 0.157
+        },
+        "signals": [
+          {
+            "signal": "sig_update_action",
+            "description": "Asks the reader to update, link, correct or verify a record",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_correction",
+            "description": "Is a corrigendum, amendment or errata",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4308
+          }
+        ]
+      },
+      {
+        "sentence": "The figures mentioned in paragraph 4 may be read as figures for the preceding financial year.",
+        "role": "reference",
+        "confidence": 0.674,
+        "probabilities": {
+          "reference": 0.674,
+          "action_required": 0.161,
+          "deadline": 0.165
+        },
+        "signals": [
+          {
+            "signal": "sig_correction",
+            "description": "Is a corrigendum, amendment or errata",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_section_ref",
+            "description": "Cites a section, rule or clause number",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5433
+          }
+        ]
+      },
+      {
+        "sentence": "The organisation shall submit a utilisation certificate for the grant received.",
+        "role": "action_required",
+        "confidence": 0.579,
+        "probabilities": {
+          "reference": 0.119,
+          "action_required": 0.579,
+          "deadline": 0.303
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_certificate_action",
+            "description": "Requires a certificate, licence, permit or approval",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The contractor must furnish a performance guarantee in the prescribed form.",
+        "role": "action_required",
+        "confidence": 0.681,
+        "probabilities": {
+          "reference": 0.147,
+          "action_required": 0.681,
+          "deadline": 0.171
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.3307
+          }
+        ]
+      },
+      {
+        "sentence": "The utilisation certificate is to be submitted within 60 days of the close of the financial year.",
+        "role": "deadline",
+        "confidence": 0.718,
+        "probabilities": {
+          "reference": 0.125,
+          "action_required": 0.158,
+          "deadline": 0.718
+        },
+        "signals": [
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_certificate_action",
+            "description": "Requires a certificate, licence, permit or approval",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.585
+          }
+        ]
+      },
+      {
+        "sentence": "The last date for the submission of the utilisation certificate is 30 June.",
+        "role": "deadline",
+        "confidence": 0.66,
+        "probabilities": {
+          "reference": 0.097,
+          "action_required": 0.243,
+          "deadline": 0.66
+        },
+        "signals": [
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_certificate_action",
+            "description": "Requires a certificate, licence, permit or approval",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.3307
+          }
+        ]
+      },
+      {
+        "sentence": "The extension of time is granted up to 30 September.",
+        "role": "deadline",
+        "confidence": 0.737,
+        "probabilities": {
+          "reference": 0.15,
+          "action_required": 0.113,
+          "deadline": 0.737
+        },
+        "signals": [
+          {
+            "signal": "sig_extension",
+            "description": "Announces an extension of time",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 3.9703
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.3979
+          }
+        ]
+      },
+      {
+        "sentence": "The period of the scheme has been extended by 6 months.",
+        "role": "uncertain",
+        "confidence": 0.528,
+        "probabilities": {
+          "reference": 0.413,
+          "action_required": 0.059,
+          "deadline": 0.528
+        },
+        "signals": [
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_extension",
+            "description": "Announces an extension of time",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.0254
+          }
+        ]
+      },
+      {
+        "sentence": "The Authority has noted with satisfaction the progress made in the implementation of the Scheme.",
+        "role": "reference",
+        "confidence": 0.87,
+        "probabilities": {
+          "reference": 0.87,
+          "action_required": 0.062,
+          "deadline": 0.068
+        },
+        "signals": [
+          {
+            "signal": "sig_authority",
+            "description": "Names a government authority as the issuing body",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5747
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.7726
+          }
+        ]
+      },
+      {
+        "sentence": "For record only.",
+        "role": "uncertain",
+        "confidence": 0.45,
+        "probabilities": {
+          "reference": 0.45,
+          "action_required": 0.333,
+          "deadline": 0.217
+        },
+        "signals": [
+          {
+            "signal": "sig_negation_of_action",
+            "description": "Explicitly tells the reader that no action is needed",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 2.8332
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 1.3863
+          }
+        ]
+      },
+      {
+        "sentence": "No acknowledgement is necessary.",
+        "role": "reference",
+        "confidence": 0.61,
+        "probabilities": {
+          "reference": 0.61,
+          "action_required": 0.209,
+          "deadline": 0.181
+        },
+        "signals": [
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 3.4965
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 1.6094
+          },
+          {
+            "signal": "upper_ratio",
+            "description": "Proportion of characters that are uppercase",
+            "value": 0.0312
+          }
+        ]
+      }
+    ]
+  },
+  "N5": {
+    "title": "Notice: Deficiency memo in a citizen application",
+    "issuer": "Office of the Sub-Divisional Magistrate",
+    "verdict": "This notice asks you to do 5 things and sets 3 deadlines.",
+    "role_counts": {
+      "uncertain": 2,
+      "action_required": 5,
+      "deadline": 3,
+      "reference": 2
+    },
+    "sentence_count": 12,
+    "actions": [
+      {
+        "n": 1,
+        "sentence": "The applicant is required to submit a self-attested copy of the Aadhaar card along with the application.",
+        "confidence": 0.826
+      },
+      {
+        "n": 2,
+        "sentence": "Applicants are required to attach the income certificate issued by the Tehsildar.",
+        "confidence": 0.79
+      },
+      {
+        "n": 3,
+        "sentence": "The applicant shall submit the proof of residence such as a utility bill or rent agreement.",
+        "confidence": 0.773
+      },
+      {
+        "n": 4,
+        "sentence": "The applicant shall submit an affidavit duly attested by a notary.",
+        "confidence": 0.721
+      },
+      {
+        "n": 5,
+        "sentence": "The applicant shall rectify the defects within 7 days of the communication of the deficiency.",
+        "confidence": 0.659
+      },
+      {
+        "n": 6,
+        "sentence": "The application should reach this office within 10 days of the issue of this notice.",
+        "confidence": 0.758
+      },
+      {
+        "n": 7,
+        "sentence": "The applicant shall be given 15 days to file the reply.",
+        "confidence": 0.71
+      },
+      {
+        "n": 8,
+        "sentence": "You are requested to submit the pending documents at the earliest.",
+        "confidence": 0.657
+      }
+    ],
+    "deadlines": [
+      {
+        "phrase": "within 7 days"
+      },
+      {
+        "phrase": "within 10 days"
+      }
+    ],
+    "scheme": "Employees' Provident Fund",
+    "routes": [
+      {
+        "name": "UIDAI / My Aadhaar",
+        "url": "https://uidai.gov.in/",
+        "why": "matches the subject of this notice"
+      }
+    ],
+    "safety": {
+      "level": "unclear",
+      "headline": "There are no strong cues either way. Check the notice against the official portal before acting.",
+      "genuine_cues": [],
+      "caution_cues": [],
+      "advice": "A notice that asks for money, an OTP, a UPI transfer, or an app install is not a normal government notice. Verify the file number and the issuer on the department's official website, or on the eGazette, before you respond."
+    },
+    "sentences": [
+      {
+        "sentence": "This office has received your application for the issuance of the certificate.",
+        "role": "uncertain",
+        "confidence": 0.372,
+        "probabilities": {
+          "reference": 0.372,
+          "action_required": 0.368,
+          "deadline": 0.26
+        },
+        "signals": [
+          {
+            "signal": "sig_application_action",
+            "description": "Asks the reader to apply, register, enrol or renew",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_certificate_action",
+            "description": "Requires a certificate, licence, permit or approval",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.3694
+          }
+        ]
+      },
+      {
+        "sentence": "On scrutiny of the application the following deficiency has been noticed.",
+        "role": "uncertain",
+        "confidence": 0.428,
+        "probabilities": {
+          "reference": 0.428,
+          "action_required": 0.196,
+          "deadline": 0.376
+        },
+        "signals": [
+          {
+            "signal": "sig_application_action",
+            "description": "Asks the reader to apply, register, enrol or renew",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_inspection",
+            "description": "Provides for inspection, audit or physical verification",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_historical",
+            "description": "Reports something that already happened, rather than instructing",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The applicant is required to submit a self-attested copy of the Aadhaar card along with the application.",
+        "role": "action_required",
+        "confidence": 0.826,
+        "probabilities": {
+          "reference": 0.079,
+          "action_required": 0.826,
+          "deadline": 0.095
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_application_action",
+            "description": "Asks the reader to apply, register, enrol or renew",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "Applicants are required to attach the income certificate issued by the Tehsildar.",
+        "role": "action_required",
+        "confidence": 0.79,
+        "probabilities": {
+          "reference": 0.145,
+          "action_required": 0.79,
+          "deadline": 0.064
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_certificate_action",
+            "description": "Requires a certificate, licence, permit or approval",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The applicant shall submit the proof of residence such as a utility bill or rent agreement.",
+        "role": "action_required",
+        "confidence": 0.773,
+        "probabilities": {
+          "reference": 0.107,
+          "action_required": 0.773,
+          "deadline": 0.12
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.5218
+          }
+        ]
+      },
+      {
+        "sentence": "The applicant shall submit an affidavit duly attested by a notary.",
+        "role": "action_required",
+        "confidence": 0.721,
+        "probabilities": {
+          "reference": 0.112,
+          "action_required": 0.721,
+          "deadline": 0.168
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.2047
+          }
+        ]
+      },
+      {
+        "sentence": "The applicant shall rectify the defects within 7 days of the communication of the deficiency.",
+        "role": "deadline",
+        "confidence": 0.659,
+        "probabilities": {
+          "reference": 0.102,
+          "action_required": 0.239,
+          "deadline": 0.659
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_update_action",
+            "description": "Asks the reader to update, link, correct or verify a record",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "sentence": "The application should reach this office within 10 days of the issue of this notice.",
+        "role": "deadline",
+        "confidence": 0.758,
+        "probabilities": {
+          "reference": 0.163,
+          "action_required": 0.079,
+          "deadline": 0.758
+        },
+        "signals": [
+          {
+            "signal": "sig_deadline",
+            "description": "Sets a deadline or cut-off date",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_application_action",
+            "description": "Asks the reader to apply, register, enrol or renew",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.4427
+          }
+        ]
+      },
+      {
+        "sentence": "The applicant shall be given 15 days to file the reply.",
+        "role": "deadline",
+        "confidence": 0.71,
+        "probabilities": {
+          "reference": 0.069,
+          "action_required": 0.221,
+          "deadline": 0.71
+        },
+        "signals": [
+          {
+            "signal": "sig_imperative",
+            "description": "Uses directive language (shall / must / is required to / are directed to)",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.0254
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.4849
+          }
+        ]
+      },
+      {
+        "sentence": "The application was forwarded to the sanctioning authority for consideration.",
+        "role": "reference",
+        "confidence": 0.629,
+        "probabilities": {
+          "reference": 0.629,
+          "action_required": 0.221,
+          "deadline": 0.15
+        },
+        "signals": [
+          {
+            "signal": "sig_application_action",
+            "description": "Asks the reader to apply, register, enrol or renew",
+            "value": 1.0
+          },
+          {
+            "signal": "sig_authority",
+            "description": "Names a government authority as the issuing body",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.3567
+          }
+        ]
+      },
+      {
+        "sentence": "The document is issued without any prejudice to the rights of the parties.",
+        "role": "reference",
+        "confidence": 0.596,
+        "probabilities": {
+          "reference": 0.596,
+          "action_required": 0.215,
+          "deadline": 0.189
+        },
+        "signals": [
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.3175
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.6391
+          },
+          {
+            "signal": "upper_ratio",
+            "description": "Proportion of characters that are uppercase",
+            "value": 0.0135
+          }
+        ]
+      },
+      {
+        "sentence": "You are requested to submit the pending documents at the earliest.",
+        "role": "action_required",
+        "confidence": 0.657,
+        "probabilities": {
+          "reference": 0.206,
+          "action_required": 0.657,
+          "deadline": 0.137
+        },
+        "signals": [
+          {
+            "signal": "sig_document_req",
+            "description": "Requires documents to be produced, uploaded or enclosed",
+            "value": 1.0
+          },
+          {
+            "signal": "char_len_log",
+            "description": "Sentence length (log characters)",
+            "value": 4.2047
+          },
+          {
+            "signal": "word_count_log",
+            "description": "Sentence length (log words)",
+            "value": 2.4849
+          }
+        ]
+      }
+    ]
+  }
+}
